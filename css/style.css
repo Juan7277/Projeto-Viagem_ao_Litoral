@@ -1,0 +1,314 @@
+/* ── Reset & Base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #1a1a2e;
+}
+
+/* ── Header ── */
+header {
+  background-color: #0a4f7a;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #90d4f7;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* ── Hero ── */
+.hero {
+  background: linear-gradient(135deg, #0a4f7a 0%, #1d9e75 100%);
+  color: white;
+  padding: 90px 60px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 560px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #0a4f7a;
+  padding: 14px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ── Seção de viagens ── */
+.viagens {
+  padding: 70px 60px;
+  text-align: center;
+}
+
+.viagens h2 {
+  font-size: 30px;
+  color: #0a4f7a;
+  margin-bottom: 8px;
+}
+
+.viagens > p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 24px;
+  width: 240px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  text-align: left;
+  border-top: 4px solid #1d9e75;
+}
+
+.card .destino {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a4f7a;
+  margin-bottom: 8px;
+}
+
+.card .duracao {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.card .preco {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1d9e75;
+}
+
+.card .preco span {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+/* ── Galeria ── */
+.galeria {
+  padding: 0 60px 70px;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 900px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: #063550;
+  color: #90d4f7;
+  text-align: center;
+  padding: 28px;
+  font-size: 14px;
+}
+
+/* ── Página Contato ── */
+.contato-section {
+  max-width: 560px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.contato-section h2 {
+  font-size: 30px;
+  color: #0a4f7a;
+  margin-bottom: 8px;
+}
+
+.contato-section > p {
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.formulario {
+  background: white;
+  padding: 36px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.formulario input {
+  padding: 12px 16px;
+  border: 1.5px solid #d0e8f5;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.formulario input:focus {
+  border-color: #0a4f7a;
+}
+
+.formulario button {
+  background-color: #0a4f7a;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.formulario button:hover {
+  background-color: #1d9e75;
+}
+
+/* ── Página Sobre ── */
+.sobre-section {
+  max-width: 700px;
+  margin: 70px auto;
+  padding: 0 40px;
+}
+
+.sobre-section h2 {
+  font-size: 30px;
+  color: #0a4f7a;
+  margin-bottom: 20px;
+}
+
+.sobre-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+/* ── Página Promo ── */
+.promo-hero {
+  background: linear-gradient(135deg, #1d9e75 0%, #0a4f7a 100%);
+  color: white;
+  padding: 90px 60px;
+  text-align: center;
+}
+
+.promo-hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.promo-hero .tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 18px;
+  border-radius: 40px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.promo-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.promo-detalhes {
+  padding: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.promo-detalhes h3 {
+  font-size: 22px;
+  color: #0a4f7a;
+  margin-bottom: 16px;
+}
+
+.promo-detalhes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.promo-detalhes ul li::before {
+  content: "✓ ";
+  color: #1d9e75;
+  font-weight: 700;
+}
+
+.promo-detalhes ul li {
+  font-size: 16px;
+  color: #444;
+}
